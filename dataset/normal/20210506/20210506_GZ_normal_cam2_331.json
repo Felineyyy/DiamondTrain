@@ -1,0 +1,58 @@
+{
+  "version": "4.5.6",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          681.9,
+          285.4
+        ],
+        [
+          789.4291754756871,
+          338.0549682875264
+        ],
+        [
+          691.0,
+          413.6
+        ],
+        [
+          580.9,
+          338.1
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "square",
+      "points": [
+        [
+          305.7,
+          150.0
+        ],
+        [
+          324.5,
+          163.6
+        ],
+        [
+          236.3,
+          179.9
+        ],
+        [
+          223.8,
+          162.5
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "20210506_GZ_normal_cam2_331.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

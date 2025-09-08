@@ -1,0 +1,58 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          669.4915254237287,
+          311.6760828625235
+        ],
+        [
+          771.9397363465159,
+          362.1468926553672
+        ],
+        [
+          676.2711864406779,
+          431.638418079096
+        ],
+        [
+          573.4463276836158,
+          360.4519774011299
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "square",
+      "points": [
+        [
+          1032.1,
+          192.2
+        ],
+        [
+          1118.6,
+          206.4
+        ],
+        [
+          1108.4,
+          224.1
+        ],
+        [
+          1016.7,
+          206.1
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "bridge_shadow3cam20099.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

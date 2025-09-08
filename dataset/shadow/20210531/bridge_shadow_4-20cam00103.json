@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          583.9586028460543,
+          262.3544631306598
+        ],
+        [
+          654.4631306597671,
+          297.1539456662354
+        ],
+        [
+          726.4591439688716,
+          266.01815823605705
+        ],
+        [
+          648.6416558861578,
+          237.90426908150064
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "bridge_shadow_4-20cam00103.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

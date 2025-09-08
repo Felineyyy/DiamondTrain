@@ -1,0 +1,34 @@
+{
+  "version": "4.5.6",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          660.8854675292969,
+          401.43386363983154
+        ],
+        [
+          804.891304347826,
+          495.3804347826087
+        ],
+        [
+          673.641304347826,
+          645.9239130434783
+        ],
+        [
+          525.2717391304348,
+          487.5
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "20210506_GZ_shadow_cam2_78.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

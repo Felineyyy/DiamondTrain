@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          141.04803493449782,
+          230.6768558951965
+        ],
+        [
+          147.05240174672488,
+          251.52838427947597
+        ],
+        [
+          257.05128205128204,
+          231.41025641025644
+        ],
+        [
+          241.66666666666669,
+          212.82051282051285
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "water_bridge_shadow1cam00073.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

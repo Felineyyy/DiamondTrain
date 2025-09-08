@@ -1,0 +1,58 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          1071.4754098360654,
+          222.2950819672131
+        ],
+        [
+          1182.622950819672,
+          241.63934426229505
+        ],
+        [
+          1182.295081967213,
+          265.57377049180326
+        ],
+        [
+          1061.311475409836,
+          246.2295081967213
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "square",
+      "points": [
+        [
+          638.4,
+          163.6
+        ],
+        [
+          600.5,
+          171.2
+        ],
+        [
+          639.7,
+          181.1
+        ],
+        [
+          680.5,
+          171.8
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "xiyang-water1cam00132.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

@@ -1,0 +1,58 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          671.5,
+          284.5
+        ],
+        [
+          761.1,
+          324.9
+        ],
+        [
+          676.1,
+          376.3
+        ],
+        [
+          586.8,
+          323.3
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "square",
+      "points": [
+        [
+          1014.1221374045801,
+          184.60559796437659
+        ],
+        [
+          1091.47582697201,
+          198.4732824427481
+        ],
+        [
+          1080.788804071247,
+          212.9770992366412
+        ],
+        [
+          996.6921119592874,
+          197.0737913486005
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "water_bridge_shadow1cam20087.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          619.4876033057851,
+          288.4876033057851
+        ],
+        [
+          741.1,
+          269.1
+        ],
+        [
+          625.2727272727273,
+          254.60330578512395
+        ],
+        [
+          499.4,
+          270.4
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "20210618_GZ_slant_094115_1092.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

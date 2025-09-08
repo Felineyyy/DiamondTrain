@@ -1,0 +1,34 @@
+{
+  "version": "4.5.6",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          1146.0093896713613,
+          192.01877934272298
+        ],
+        [
+          1137.4021909233177,
+          214.5539906103286
+        ],
+        [
+          1279,
+          243
+        ],
+        [
+          1274.0219092331768,
+          214.2410015649452
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "20210506_GZ_normal_cam2_386.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

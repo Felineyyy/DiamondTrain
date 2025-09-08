@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          647.3799126637555,
+          203.7117903930131
+        ],
+        [
+          700.2183406113537,
+          217.46724890829694
+        ],
+        [
+          651.4192139737991,
+          235.69868995633186
+        ],
+        [
+          597.3799126637555,
+          217.68558951965065
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "xiyang-water1cam00236.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          736.0,
+          201.6
+        ],
+        [
+          817.5,
+          214.4
+        ],
+        [
+          816.7067307692307,
+          233.77403846153845
+        ],
+        [
+          725.8413461538461,
+          217.5480769230769
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "20210622_GZ_027123459_24.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

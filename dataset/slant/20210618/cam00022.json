@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          578.9917355371902,
+          262.86776859504135
+        ],
+        [
+          716.7279411764705,
+          263.235294117647
+        ],
+        [
+          657.4468085106382,
+          236.76122931442077
+        ],
+        [
+          536.2,
+          236.3
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "cam00022.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

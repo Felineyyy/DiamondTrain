@@ -1,0 +1,34 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "square",
+      "points": [
+        [
+          661.8018018018018,
+          220.9009009009009
+        ],
+        [
+          734.2342342342342,
+          250.63063063063063
+        ],
+        [
+          664.6846846846847,
+          289.1891891891892
+        ],
+        [
+          587.927927927928,
+          251.71171171171173
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "square_afternooncam21205.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

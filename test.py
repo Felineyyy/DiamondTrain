@@ -52,6 +52,9 @@ def test_model(model_path, data_file, data_dir, confidence, output_dir):
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = confidence
     cfg.MODEL.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+    cfg.INPUT.MIN_SIZE_TEST = 640
+    cfg.INPUT.MAX_SIZE_TEST = 1000
     
     predictor = DefaultPredictor(cfg)
     

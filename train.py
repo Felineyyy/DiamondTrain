@@ -23,7 +23,7 @@ class FastTrainer(DefaultTrainer):
             output_folder = os.path.join(cfg.OUTPUT_DIR, "inference")
         return COCOEvaluator(dataset_name, cfg, False, output_folder)
 
-def setup_fast_config(output_dir="./output_fast", confidence_threshold=0.7):
+def setup_fast_config(output_dir="./output_fast", confidence_threshold=0.9):
     """Setup fast training config with smaller input size"""
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x.yaml"))
@@ -36,18 +36,18 @@ def setup_fast_config(output_dir="./output_fast", confidence_threshold=0.7):
     # 预训练模型
     cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x.yaml")
     
-    # 关键改动：减小输入尺寸以提升速度
-    cfg.INPUT.MIN_SIZE_TRAIN = (480, 512, 544, 576, 608, 640)
-    cfg.INPUT.MAX_SIZE_TRAIN = 1000
-    cfg.INPUT.MIN_SIZE_TEST = 640
-    cfg.INPUT.MAX_SIZE_TEST = 1000
+    # 训练和输入尺寸配置
+    cfg.INPUT.MIN_SIZE_TRAIN = 576
+    cfg.INPUT.MAX_SIZE_TRAIN = 900 
+    cfg.INPUT.MIN_SIZE_TEST = 576
+    cfg.INPUT.MAX_SIZE_TEST = 900
     
     # 模型配置
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = confidence_threshold
     cfg.MODEL.ROI_HEADS.NMS_THRESH_TEST = 0.5
     
-    # 训练参数 - 减少迭代次数
+    # 训练参数
     cfg.SOLVER.IMS_PER_BATCH = 10 if torch.cuda.is_available() else 2
     cfg.SOLVER.BASE_LR = 0.01
     cfg.SOLVER.MAX_ITER = 1500      
@@ -55,15 +55,25 @@ def setup_fast_config(output_dir="./output_fast", confidence_threshold=0.7):
     cfg.SOLVER.GAMMA = 0.1
     cfg.SOLVER.WARMUP_ITERS = 200
     cfg.SOLVER.WEIGHT_DECAY = 0.0001
+
+    cfg.MODEL.RPN.PRE_NMS_TOPK_TRAIN = 400   
+    cfg.MODEL.RPN.PRE_NMS_TOPK_TEST = 300     
+    cfg.MODEL.RPN.POST_NMS_TOPK_TRAIN = 200  
+    cfg.MODEL.RPN.POST_NMS_TOPK_TEST = 150   
     
-    # ROI配置 - 减少batch size提升速度
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128   # 从128减少到64
-    cfg.MODEL.RPN.BATCH_SIZE_PER_IMAGE = 256        # 从512减少到256
+    # ROI配置  
+    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
+    cfg.MODEL.RPN.BATCH_SIZE_PER_IMAGE = 256
+    
+    # 梯度裁剪，防止训练不稳定
+    cfg.SOLVER.CLIP_GRADIENTS.ENABLED = True
+    cfg.SOLVER.CLIP_GRADIENTS.CLIP_TYPE = "value"
+    cfg.SOLVER.CLIP_GRADIENTS.CLIP_VALUE = 1.0
     
     # 验证和保存配置
-    cfg.TEST.EVAL_PERIOD = 500      # 验证频率
+    cfg.TEST.EVAL_PERIOD = 500      
     cfg.SOLVER.CHECKPOINT_PERIOD = 500
-    cfg.TEST.DETECTIONS_PER_IMAGE = 10  # 减少检测数量
+    cfg.TEST.DETECTIONS_PER_IMAGE = 15  
     
     # 设备配置
     cfg.MODEL.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -186,6 +196,7 @@ def main():
     
     print(f"\nTraining completed successfully!")
     print(f"Model path: {os.path.join(args.output_dir, 'model_final.pth')}")
+
 
 if __name__ == "__main__":
     main()

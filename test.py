@@ -55,6 +55,7 @@ def test_model(model_path, data_file, data_dir, confidence, output_dir):
 
     cfg.INPUT.MIN_SIZE_TEST = 640
     cfg.INPUT.MAX_SIZE_TEST = 1000
+    cfg.TEST.DETECTIONS_PER_IMAGE = 10
     
     predictor = DefaultPredictor(cfg)
     

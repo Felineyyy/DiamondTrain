@@ -59,6 +59,7 @@ def test_model(model_path, data_file, data_dir, confidence, output_dir):
 
     cfg.MODEL.RPN.PRE_NMS_TOPK_TEST = 300     
     cfg.MODEL.RPN.POST_NMS_TOPK_TEST = 150 
+    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 256
     
     predictor = DefaultPredictor(cfg)
     

@@ -53,9 +53,12 @@ def test_model(model_path, data_file, data_dir, confidence, output_dir):
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = confidence
     cfg.MODEL.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-    cfg.INPUT.MIN_SIZE_TEST = 640
-    cfg.INPUT.MAX_SIZE_TEST = 1000
+    cfg.INPUT.MIN_SIZE_TEST = 576
+    cfg.INPUT.MAX_SIZE_TEST = 900
     cfg.TEST.DETECTIONS_PER_IMAGE = 10
+
+    cfg.MODEL.RPN.PRE_NMS_TOPK_TEST = 300     
+    cfg.MODEL.RPN.POST_NMS_TOPK_TEST = 150 
     
     predictor = DefaultPredictor(cfg)
     

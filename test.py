@@ -56,10 +56,10 @@ def test_model(model_path, data_file, data_dir, confidence, output_dir):
     cfg.INPUT.MIN_SIZE_TEST = 576
     cfg.INPUT.MAX_SIZE_TEST = 900
     cfg.TEST.DETECTIONS_PER_IMAGE = 10
-
-    cfg.MODEL.RPN.PRE_NMS_TOPK_TEST = 300     
-    cfg.MODEL.RPN.POST_NMS_TOPK_TEST = 150 
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 256
+    # 添加对应的RPN优化 (与训练配置一致)
+    cfg.MODEL.RPN.PRE_NMS_TOPK_TEST = 1500
+    cfg.MODEL.RPN.POST_NMS_TOPK_TEST = 500
+    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 256 
     
     predictor = DefaultPredictor(cfg)
     
